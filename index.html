@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="New folder/correct logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <script src="https://kit.fontawesome.com/cdbbb484ff.js" crossorigin="anonymous"></script>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Engineer</p>
+            <h1>Hi, I'm <span>Shalitha</span> Sachithra<br>From Sri Lanka</h1>
+        </div>
+    </div>
+</div>
+
+<!----------------------about--------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="New folder/normal 2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Shalitha, a dedicated Data Engineer with a degree in Data Science from SLTC Research
+                    University in Sri Lanka. With a solid foundation in data engineering and a passion for transforming
+                    complex data into actionable insights, I am committed to leveraging my skills to drive data-driven
+                    decision-making in dynamic environments.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('exeperience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Engineering</span></li>
+                        <li><span>Data Analysis</span></li>
+                        <li><span>Business Data Analysis</span></li>
+                        <li><span>Risk Management</span></li>
+                        <li><span>Application Architecture</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exeperience">
+                    <ul>
+                        <li><span>2023-Current</span><br>Data Engineer at Dialog Axiata PLC.</li>
+                        <li><span>2022-2023</span><br>Junior Data Engineer at Cargills (Ceylon) PLC.</li>
+                        <li><span>2021-2022</span><br>senior Business Data Analyst at HNB FINANCE.</li>
+                        <li><span>2019-2021</span><br>Business Data Analyst at HNB FINANCE.</li>
+                        <li><span>2018-2019</span><br>Internship at Dialog Axiata PLC.</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>British IT Diploma level 5 at Esoft Metro Campus </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------services----------------------->
+<div id="services" class="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div class="service-item">
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p>Creating and maintaining robust, scalable databases using SQL (e.g., MySQL, PostgreSQL) and NoSQL (e.g., MongoDB, Cassandra) technologies to support businesses.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-item">
+                <i class="fa-regular fa-building"></i>
+                <h2>Data Integration</h2>
+                <p>Building and managing data warehouses using platforms like Amazon Redshift, Google BigQuery, or Snowflake, essential for financial institutions and telecom companies.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-lock"></i>
+                <h2>Data Quality & Governance</h2>
+                <p>Ensuring data accuracy, consistency, and reliability through validation and cleansing techniques, crucial for maintaining high standards in local businesses.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="New folder/dialog correct.jpg" alt="Dialog Axiata Project">
+                <div class="layer">
+                    <h3>Real-Time Data Quality Monitoring</h3>
+                    <p>Created a real-time data quality monitoring system for Dialog Axiata PLC.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="New folder/hatton national bank.jpg" alt="Hatton National Bank Project">
+                <div class="layer">
+                    <h3>Data Warehouse for Hatton National Bank</h3>
+                    <p>Designed and implemented a scalable data warehouse for Hatton National Bank of Sri Lanka.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="New folder/cargills ok.jpg" alt="Cargills Project">
+                <div class="layer">
+                    <h3>Automated Data Pipeline for Retail Analytics</h3>
+                    <p>Developed an automated data pipeline for Cargills PLC, integrating data from multiple sources.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------------------contact------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>shalithasachithra@gmail.com</p>
+                <p><i class="fa-solid fa-phone-flip"></i>0763838735</p>  
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-threads"></i></a>
+                </div>
+                <a href="New folder/SHALITHA SACHITHRA CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Type Your Message Here"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 SHaLiTHa. Crafted with <i class="fa-regular fa-heart"></i> by 🅢🅢A Corporation. All rights reserved.</p>
+
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzCWFalbuAS1Siz8pBCagmMUWQFD7GiNAtF5b0dIRCfZYdkMH-b4naOegg02r-MOXZj/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfuly"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html> 
